@@ -22,7 +22,7 @@ $router->get('posts', 'ExampleController@posts');
 // CRUD completo
 $router->get('app', 'LibroController@app');
 $router->get('libros', 'LibroController@index');
-$router->get('librosc', 'LibroController@show');
+$router->get('libros/{id}', 'LibroController@show');
 $router->post('libros', 'LibroController@store');
 $router->put('libros/{id}', 'LibroController@update');
 $router->delete('libros/{id}', 'LibroController@destroy');
